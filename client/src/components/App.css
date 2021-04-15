@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat;
+  font-weight: 200;
+  background-color: #ebebeb;
+  overflow-x: hidden;
+}
+
+.navbar img {
+  width: 15vw;
+  margin-left: 5vw;
+  margin-top: 5px;
+}
+
+.videoTag {
+  width: 100vw;
+}
+
+.brands {
+  margin-right:10px;
+}
+
+.menu {
+  transition: all 2s;
+}
+
+.motivational {
+  text-align: center;
+  margin: 100px 130px 100px 130px;
+  font-size: 40px;
+  color: black;
+  align-items: center;
+}
+
+.section2 h1 {
+  position: relative;
+  font-weight: 600;
+  margin-top: 400px;
+  color: #ebebeb;
+}
+
+.section2 h2 {
+  position: relative;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  color: #ebebeb;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 200;
+}
+
+.divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.articles {
+  text-align: center;
+}
+
+.section-home {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
