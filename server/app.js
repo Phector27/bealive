@@ -4,15 +4,16 @@ require('dotenv').config()
 require('./configs/mongoose.config')
 
 // Debugger
-require('./configs/debugger.config')
+require('./configs/debug.config')
 
 // App
 const express = require('express')
 const app = express()
 
 // Configs
-require('./configs/cors.config')(app)
 require('./configs/middleware.config')(app)
+require('./configs/locals.config')(app)
+require('./configs/cors.config')(app)
 require('./configs/passport.config')(app)
 
 // Routes index
