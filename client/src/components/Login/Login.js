@@ -26,7 +26,7 @@ class Login extends Component {
         this.props.storeUser(theLoggedInUser.data);
         this.props.history.push("/profile");
       })
-      .catch((err) => this.setState({ error: "Usuario ya registrado." }));
+      .catch((err) => this.setState({ error: "Usuario o contraseña incorrecta." }));
   };
 
   componentDidMount() {

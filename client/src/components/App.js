@@ -34,9 +34,9 @@ class App extends Component {
         <main>
           <Switch>
             <Route path="/" exact render={() => this.state.loggedInUser ? <HomeLogged /> : <Home />} />
-            <Route path="/signup" render={props => <Signup storeUser={this.setTheUser} {...props} />} />
-            <Route path="/login" render={props => <Login storeUser={this.setTheUser} {...props} />} />
-            <Route path="/profile" render={() => this.state.loggedInUser ? <Profile loggedUser={this.state.loggedInUser} storeUser={this.setTheUser} /> : <Redirect to="/" />} />
+            <Route path="/signup" render={props => this.state.loggedInUser ? <Redirect to="/profile" /> : <Signup storeUser={this.setTheUser} {...props} />} />
+            <Route path="/login" render={props => this.state.loggedInUser ? <Redirect to="/profile" /> : <Login storeUser={this.setTheUser} {...props} />} />
+            <Route path="/profile" render={() => this.state.loggedInUser ? <Profile loggedUser={this.state.loggedInUser} storeUser={this.setTheUser} /> : <Redirect to="/login" />} />
           </Switch>
         </main>
         <Footer />

@@ -5,6 +5,7 @@ import email from "./img/email.png";
 import Video from "react-player";
 import UserService from "./../../service/user.service";
 import EditProfile from "./Edit-profile";
+import ScrollToTop from "react-scroll-to-top";
 import "./Profile.css";
 
 export default class Profile extends Component {
@@ -19,9 +20,14 @@ export default class Profile extends Component {
 
   handleUserModal = (visible) => this.setState({ showEditUserModal: visible });
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>
+      <ScrollToTop smooth />
         <Container className="profile">
           <h1 style={{ marginTop: "200px" }}>
             Bienvenid@ a tu perfil
@@ -103,6 +109,9 @@ export default class Profile extends Component {
                 playing={true}
                 volume={5}
                 muted={true}
+                controls
+                width={350}
+                height={250}
               />
             </Col>
 

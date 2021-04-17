@@ -1,5 +1,6 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import { Link } from "react-router-dom";
 
 const FooterPage = () => {
   return (
@@ -104,13 +105,15 @@ const FooterPage = () => {
               style={{ width: "60px" }}
             />
             <p>
-              <a href="#!">Tu cuenta</a>
+              <Link to="/profile">Tu cuenta</Link>
             </p>
             <p>
-              <a href="#!">Hazte soci@</a>
+            <Link to="/signup">Hazte soci@</Link>
+
             </p>
             <p>
-              <a href="#!">Regístrate</a>
+            <Link to="/signup">Regístrate</Link>
+
             </p>
             <p>
               <a href="#!">Ayuda</a>
@@ -124,9 +127,14 @@ const FooterPage = () => {
               className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
               style={{ width: "60px" }}
             />
-            <p>
-              <i className="fa fa-envelope mr-3" /> bealiveconnect@gmail.com
-            </p>
+            <a
+                className="gplus-ic brands"
+                href="mailto:Bealiveconnect@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+                style={{display: 'block'}}
+            ><i className="fa fa-envelope mr-3" /> bealiveconnect@gmail.com</a>
+            <p></p>
             <p>
               <i className="fa fa-phone mr-3" /> +34 640 25 43 48
             </p>
@@ -136,7 +144,7 @@ const FooterPage = () => {
       <div className="footer-copyright text-center py-4">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href="https://www.BeALIVE.com"> BeALIVE.com </a>
+          <a href="https://www.BeALIVE.io"> BeALIVE.io </a>
         </MDBContainer>
       </div>
     </MDBFooter>
