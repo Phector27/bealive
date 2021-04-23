@@ -90,7 +90,7 @@ const FooterPage = () => {
               <a href="#!">Visita nuestra tienda</a>
             </p>
             <p>
-              <a href="#!">Torneos organizados</a>
+              <Link to="/">Torneos organizados</Link>
             </p>
             <p>
               <a href="#!">Quiénes Somos</a>
@@ -108,15 +108,13 @@ const FooterPage = () => {
               <Link to="/profile">Tu cuenta</Link>
             </p>
             <p>
-            <Link to="/signup">Hazte soci@</Link>
-
+              <Link to="/signup">Hazte soci@</Link>
             </p>
             <p>
-            <Link to="/signup">Regístrate</Link>
-
+              <Link to="/signup">Regístrate</Link>
             </p>
             <p>
-              <a href="#!">Ayuda</a>
+              <a href="mailto:Bealiveconnect@gmail.com">Ayuda</a>
             </p>
           </MDBCol>
           <MDBCol md="4" lg="3" xl="3" className="mb-4">
@@ -128,12 +126,14 @@ const FooterPage = () => {
               style={{ width: "60px" }}
             />
             <a
-                className="gplus-ic brands"
-                href="mailto:Bealiveconnect@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-                style={{display: 'block'}}
-            ><i className="fa fa-envelope mr-3" /> bealiveconnect@gmail.com</a>
+              className="gplus-ic brands"
+              href="mailto:Bealiveconnect@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              style={{ display: "block" }}
+            >
+              <i className="fa fa-envelope mr-3" /> bealiveconnect@gmail.com
+            </a>
             <p></p>
             <p>
               <i className="fa fa-phone mr-3" /> +34 640 25 43 48

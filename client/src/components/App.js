@@ -10,7 +10,6 @@ import Login from "./Login/Login";
 import AuthService from './../service/auth.service'
 import Profile from './Profile/Profile'
 
-
 class App extends Component {
   constructor() {
     super();
