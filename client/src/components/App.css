@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-
 * {
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: Montserrat;
+  font-family: Helvetica, sans-serif;
   font-weight: 200;
   background-color: #ebebeb;
   overflow-x: hidden;

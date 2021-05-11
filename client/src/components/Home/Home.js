@@ -1,15 +1,11 @@
 import React from "react";
-import video from "./VID-20210413-WA0101.mp4";
+import video from "./Be Alive - I Want.mp4";
 import Features from "./../Features/Features";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 
 export default function Home() {
-  //   const goVideo = () => {
-  // console.log('hola')
-  //   }
-
   return (
     <>
       <ScrollToTop smooth />
@@ -23,9 +19,7 @@ export default function Home() {
         <video className="videoTag" autoPlay muted>
           <source src={video} type="video/mp4" />
         </video>
-        <div style={{ textAlign: "center" }}>
-          {/* <Link to="/video"><Button variant="outline-dark" style={{borderRadius: '20px'}} onClick={goVideo}>Ver video completo ▶️</Button></Link> */}
-        </div>
+        <div style={{ textAlign: "center" }}></div>
         <Features />
         <div
           style={{

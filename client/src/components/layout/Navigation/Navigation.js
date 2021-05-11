@@ -74,7 +74,7 @@ class Navigation extends Component {
                   >
                     <button
                       type="button"
-                      className="btn btn-success"
+                      className="btn btn-success btn-sm"
                       style={{ fontSize: "1em"}}
                     >
                       Mi perfil
@@ -91,7 +91,7 @@ class Navigation extends Component {
                   >
                     <button
                       type="button"
-                      className="btn btn-dark"
+                      className="btn btn-dark btn-sm"
                       style={{ fontSize: "1em", marginRight: "7rem" }}
                     >
                       Cerrar sesión
@@ -121,7 +121,7 @@ class Navigation extends Component {
                       >
                         <button
                           type="button"
-                          className="btn btn-dark"
+                          className="btn btn-dark btn-sm"
                           style={{ fontSize: "1em" }}
                         >
                           Inicio sesión
@@ -147,7 +147,7 @@ class Navigation extends Component {
                       >
                         <button
                           type="button"
-                          className="btn btn-success"
+                          className="btn btn-success btn-sm"
                           style={{ fontSize: "1em" }}
                         >
                           Registro

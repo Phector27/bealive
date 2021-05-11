@@ -24,7 +24,7 @@ const FooterPage = () => {
             <MDBCol md="6" lg="7" className="text-center text-md-right">
               <a
                 className="fb-ic ml-0 brands"
-                href="https://www.instagram.com/bealiveconnect/"
+                href="https://www.facebook.com/Be-Alive-103891971882056/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -32,7 +32,7 @@ const FooterPage = () => {
               </a>
               <a
                 className="tw-ic brands"
-                href="https://www.twitter.com/BeAlive10715100/"
+                href="https://twitter.com/BeAliveConnect"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -48,7 +48,7 @@ const FooterPage = () => {
               </a>
               <a
                 className="li-ic brands"
-                href="mailto:Bealiveconnect@gmail.com"
+                href="https://www.linkedin.com/company/bealiveconnect"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -93,7 +93,7 @@ const FooterPage = () => {
               <Link to="/">Torneos organizados</Link>
             </p>
             <p>
-              <a href="#!">Quiénes Somos</a>
+              <Link to="/">Quiénes Somos</Link>
             </p>
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4">

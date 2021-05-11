@@ -9,6 +9,7 @@ import Signup from "./Signup/Signup";
 import Login from "./Login/Login";
 import AuthService from './../service/auth.service'
 import Profile from './Profile/Profile'
+import Somos from './Somos/Somos'
 
 class App extends Component {
   constructor() {
@@ -35,6 +36,7 @@ class App extends Component {
             <Route path="/" exact render={() => this.state.loggedInUser ? <HomeLogged /> : <Home />} />
             <Route path="/signup" render={props => this.state.loggedInUser ? <Redirect to="/profile" /> : <Signup storeUser={this.setTheUser} {...props} />} />
             <Route path="/login" render={props => this.state.loggedInUser ? <Redirect to="/profile" /> : <Login storeUser={this.setTheUser} {...props} />} />
+            <Route path="/who" render={() => <Somos />} />
             <Route path="/profile" render={() => this.state.loggedInUser ? <Profile loggedUser={this.state.loggedInUser} storeUser={this.setTheUser} /> : <Redirect to="/login" />} />
           </Switch>
         </main>
